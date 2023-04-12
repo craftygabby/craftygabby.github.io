@@ -1,0 +1,54 @@
+.purple
+{
+    color:purple;
+    font-size:30;
+
+}
+.smallPurple
+{
+    color:purple;
+    font-size:35;
+}
+.green
+{
+    color:green;
+}
+.left
+{
+    text-align:left;
+}
+.grey
+{
+    font-size:30;
+    font-family:cursive;
+}
+.warning
+{
+    background-color:red;
+    color:black;
+    font-size:30;
+}
+.smallFont
+{
+    font-size:20;
+}
+.smallerFont
+{
+    font-size:15;
+}
+.body
+{
+    color:teal;
+    text-align:center;
+    background-color:bisque;
+}
+.bigFont
+{
+    font-size:45;
+}
+.loc-body
+{
+    color:blue;
+    text-align:center;
+    background-color:grey;
+}
