@@ -1,28 +1,99 @@
-<!DOCTYPE html>
+< !DOCTYPE html>
+
+
 <html lang="en">
     <head>
-        <title>GABBY'S WEBSITE</title>
-        <style>
-            h1{
-                color:blueviolet
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>
+            Gabby's Page!
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+
+            function greet()
+            {
+                let name = document.querySelector("#name").value;
+
+                if (name === "")
+                {
+                    name = "mate";
+                }
+                alert("G'day " + name[0].toUpperCase() + name.substr(1) +  ", DON'T FORGET TO WEAR A MASK!!!");
+                document.querySelector("#result").innerHTML='GDAY, ' + name[0].toUpperCase() + name.substr(1) + "!";
             }
-            h2{
-                color:chocolate
-            }
-        </style>
+
+        </script>
+
     </head>
-    <body>
-        <h1>This is my github pages site</h1>
-        <h2>It's all new to me...not</h2>
-        
-         <h1>Hello, world. Howya going?</h1>
+    <body class="body">
 
-        
+        <h1> </h1>
+
+        <p>You can try changing the background colour using the buttons below. Just click 'reload' to change it back.</p>
+
+        <button id="red">R</button>
+        <button id="green">G</button>
+        <button id="blue">B</button>
+        <script>
+        let body = document.querySelector("body");
+            document.querySelector("#red").onclick = function(){
+                body.style.backgroundColor = "red";
+            }
+            document.querySelector("#green").onclick = function(){
+                body.style.backgroundColor = "green";
+            }
+            document.querySelector("#blue").onclick = function(){
+                body.style.backgroundColor = "blue";
+            }
+
+        </script>
+
+        <h1 class="warning">!!!AVOID COVID-19 STAY AT HOME IN BED WITH THE COVERS OVER YOUR HEAD!!! :)</h1>
+        <h3 class="green">WHATS YOUR NAME? Enter it into the box please and click 'Submit'!</h3>
+        <form onsubmit="greet(); return false;">
+            <input type="text" id="name">
+
+            <input type="submit">
+        </form>
+
+        <div id="result">
+            Gday mate!!
+        </div>
+
+        <p>
+          <h2>Hello stickybeak! Have a nice day!!!</h2>
+        </p>
+
+        <iframe src="https://giphy.com/embed/3oEjHOWlyBm3IE1p7O" width="480" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/flirting-3oEjHOWlyBm3IE1p7O">via GIPHY</a></p>
+
+        <h5 class="purple"> GREETINGS from Gabby the coder! Welcome to my first webpage. </h5>
+
+        <p class="smallFont">You can google something from this page. Try googling polar bears...or meerkats, or Australian Kelpies, or even chisels n chainsaws</p>
+
+        <p class="smallerFont">Please enter the subject you woud like to google into the box and click the submit button.</p>
+
+        <form action="https://google.com/search" method="get">
+            <input name="q" type="text">
+            <input type="submit" value="Submit Form">
+        </form>
+
+        <iframe src="https://giphy.com/embed/qgRcS5yO99UWc" width="480" height="220" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/qgRcS5yO99UWc">via GIPHY</a></p>
+
+        <h6>Code started Thurs Sept 24th 2020 and tweaking is ongoing</h6>
+        <p class="bigFont">About me </p>
+        <p>Just click on a button th see more photos about my everyday life in Dorset, UK</p>
+
+        <button id="dog">DOG</button>
+        <button id="renos">HOUSE RENOS</button>
+        <button id = "locality">WHERE I LIVE</button>
 
 
-    
+        <p>You can see photos of 'Pup'</p>
+        /! Insert links to myDog.html, 
+
+
     </body>
-</html>
 
+</html>
 
 
